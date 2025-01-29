@@ -8,6 +8,11 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+.author__avatar {
+    display: none;
+}
+
+
 /* About Me 페이지 중앙 정렬 */
 .page-content {
   max-width: 800px; /* 최대 폭 설정 */
