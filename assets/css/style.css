@@ -1,0 +1,20 @@
+.blog-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.main-content {
+  width: 80%;
+  padding: 20px;
+}
+
+#category-select {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
