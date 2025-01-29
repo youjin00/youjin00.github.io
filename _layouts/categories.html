@@ -5,9 +5,11 @@ title: "Categories"
 
 <div class="category-list">
   {% for category in site.categories %}
-    <a class="category-item" href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}/">
-      <span class="category-name">{{ category[0] }}</span>
+    <div class="category-item">
+      <a href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}/">
+        {{ category[0] }}
+      </a>
       <span class="category-count">({{ category[1] | size }})</span>
-    </a>
+    </div>
   {% endfor %}
 </div>
