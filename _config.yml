@@ -215,6 +215,15 @@ sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
+defaults:
+  - scope:
+      path: ""
+      type: "page"
+    values:
+      layout: default
+      stylesheet: "/assets/css/style.css" # CSS 파일 경로
+
+
 
 # Outputting
 permalink: /:categories/:title/
