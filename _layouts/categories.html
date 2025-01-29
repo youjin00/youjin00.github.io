@@ -3,13 +3,11 @@ layout: default
 title: "Categories"
 ---
 
-<h1>{{ page.title }}</h1>
-<ul>
+<div class="category-list">
   {% for category in site.categories %}
-    <li>
-      <a href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}/">
-        {{ category[0] }}
-      </a> ({{ category[1] | size }})
-    </li>
+    <a class="category-item" href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}/">
+      <span class="category-name">{{ category[0] }}</span>
+      <span class="category-count">({{ category[1] | size }})</span>
+    </a>
   {% endfor %}
-</ul>
+</div>
