@@ -1,7 +1,13 @@
 ---
-layout: archive
+layout: default
+title: "Categories"
+permalink: /categories/
 ---
 
-{{ content }}
+<h1>Categories</h1>
+<ul>
+  {% for category in site.categories %}
+    <li><a href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}/">{{ category[0] }}</a> ({{ category[1] | size }})</li>
+  {% endfor %}
+</ul>
 
-{% include posts-taxonomy.html taxonomies=site.categories %}
