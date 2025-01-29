@@ -7,3 +7,37 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* 카테고리 리스트 스타일 */
+.category-list {
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+  gap: 10px; /* 카테고리 간 간격 */
+  padding: 20px 0;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between; /* 이름과 개수 양쪽 정렬 */
+  align-items: center; /* 수직 정렬 */
+  padding: 10px 15px;
+  background-color: #f8f9fa; /* 배경색 */
+  border: 1px solid #ddd; /* 테두리 */
+  border-radius: 8px; /* 둥근 모서리 */
+  transition: background-color 0.3s;
+}
+
+.category-item a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: #007bff; /* 기본 링크 색상 */
+  font-weight: bold;
+}
+
+.category-item:hover {
+  background-color: #eaf4fc; /* 호버 시 배경색 */
+}
+
+.category-item .category-count {
+  color: #555;
+  font-size: 14px;
+}
