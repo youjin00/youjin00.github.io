@@ -11,3 +11,74 @@ a {
   color: #007bff;
   text-decoration: none;
 }
+
+/* 포스트 제목 폰트 크기 조정 */
+.post-title {
+  font-size: 1.8rem; /* 기본 크기 조정 (예: 28px) */
+  line-height: 1.4; /* 제목의 줄 간격 */
+  margin-bottom: 20px;
+}
+
+/* 포스트 본문 폰트 크기 조정 */
+.post-content {
+  font-size: 1rem; /* 본문 크기 (예: 16px) */
+  line-height: 1.6; /* 본문의 줄 간격 */
+  color: #333; /* 텍스트 색상 */
+}
+
+/* 본문 내부의 소제목 */
+.post-content h2 {
+  font-size: 1.5rem; /* 소제목 크기 (예: 24px) */
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.post-content p {
+  margin-bottom: 20px; /* 문단 간격 */
+}
+
+.post-content a {
+  color: #007bff; /* 링크 색상 */
+  text-decoration: underline;
+}
+
+.post-content a:hover {
+  color: #0056b3; /* 링크 호버 색상 */
+  text-decoration: none;
+}
+
+/* 카테고리 리스트 스타일 */
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-name {
+  font-weight: bold;
+}
+
+.category-count {
+  color: #555;
+  font-size: 14px;
+}
